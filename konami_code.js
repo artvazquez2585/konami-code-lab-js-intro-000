@@ -22,7 +22,7 @@ function init() {
     if (keyLogger.length > codes.length){
       keyLogger.shift();
     }
-    if (array == codes){
+    if (keyLogger == codes){
       alert('All power-ups are active!')
     }
   })
