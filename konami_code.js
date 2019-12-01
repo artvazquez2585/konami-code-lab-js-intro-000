@@ -15,7 +15,6 @@ var keyLogger=[];
 
 function init() {
   // your code here
-  debugger
   document.body.addEventListener('keydown',
   function(e){
     console.log(e.key);
