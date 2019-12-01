@@ -20,7 +20,7 @@ function onKeyDownHandler(e){
   console.log(`This is key: ${key}`)
   if (key === codes[index]) {
     index++;
-    console.log(`This is index after addition: ${index}`)    
+    console.log(`This is index after addition: ${index}`)
     if (index === codes.length) {
       alert("Hurray!");
       index = 0;
