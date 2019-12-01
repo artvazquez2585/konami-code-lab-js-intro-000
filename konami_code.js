@@ -19,8 +19,8 @@ function onKeyDownHandler(e){
       alert("Hurray!");
       index = 0;
     }
-  } 
-  else 
+  }
+  else
   {
     index = 0;
   }
