@@ -12,21 +12,14 @@ const codes = [
 ];
 
 let index = 0;
-var keyLogger=[];
 
 function onKeyDownHandler(e){
   const key = e.key;
-  console.log(`This is index before if: ${index}`)
-  console.log(`This is eKey: ${e.key}`)
-  console.log(`This is key: ${key}`)
-  keyLogger.push(e.key);
-  console.log(`This is KeyLogger array without parenthesis${keyLogger}`);
-  //console.log(`This is KeyLogger array with parenthesis${keyLogger[]}`);
   if (key === codes[index]) {
     index++;
     console.log(`This is index after addition: ${index}`)
     if (index === codes.length) {
-      alert("Hurray!");
+      alert("All power-ups enabled for Gradius!");
       index = 0;
     }
   }
