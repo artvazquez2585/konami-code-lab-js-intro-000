@@ -18,7 +18,9 @@ function init() {
   debugger
   document.body.addEventListener('keydown',
   function(e){
+    console.log(e.key);
     keyLogger.push(e.key);
+    console.log(keyLogger)
     if (keyLogger.length > codes.length){
       keyLogger.shift();
     }
