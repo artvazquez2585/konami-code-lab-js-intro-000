@@ -17,7 +17,7 @@ function init() {
   // your code here
   document.body.addEventListener('keydown',
   function(e){
-    keyLogger.push(e.key)
+    keyLogger.push(e.key);
     if (keyLogger.length > codes.length){
       keyLogger.shift();
     }
@@ -26,3 +26,5 @@ function init() {
     }
   })
 }
+
+init();
