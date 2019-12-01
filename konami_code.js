@@ -11,6 +11,8 @@ const codes = [
   "a"
 ];
 
+var keyLogger=[];
+
 function init() {
   // your code here
   document.body.addEventListener('keydown',
