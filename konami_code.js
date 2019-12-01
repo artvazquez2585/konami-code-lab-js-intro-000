@@ -11,20 +11,24 @@ const codes = [
   "a"
 ];
 
+function onKeyDownHandler(e){
+  const key = e.key;
+  if (key === alphabet[index]) {
+    index++;
+    if (index === alphabet.length) {
+      alert("Hurray!");
+      index = 0;
+    }
+  } 
+  else 
+  {
+    index = 0;
+  }
+}
+
 function init() {
   // your code here
-  document.body.addEventListener('keydown',
-  function(e){
-    console.log(e.key);
-    keyLogger.push(e.key);
-    console.log(keyLogger);
-    if (keyLogger.length == codes.length){
-      keyLogger.shift();
-    }
-    if (keyLogger == codes){
-      alert('All power-ups are active!')
-    }
-  })
+  document.body.addEventListener('keydown',onKeyDownHandler)
 }
 
 init();
