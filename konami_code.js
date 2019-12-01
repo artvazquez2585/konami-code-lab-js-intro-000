@@ -13,7 +13,7 @@ const codes = [
 
 function init() {
   // your code here
-  var keyLogger
+  var keyLogger=[];
   document.body.addEventListener('keydown',
   function(e){
     keyLogger.push(e.key);
