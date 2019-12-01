@@ -20,7 +20,7 @@ function init() {
     console.log(e.key);
     keyLogger.push(e.key);
     console.log(keyLogger);
-    if (keyLogger.length > codes.length){
+    if (keyLogger.length == codes.length){
       keyLogger.shift();
     }
     if (keyLogger == codes){
